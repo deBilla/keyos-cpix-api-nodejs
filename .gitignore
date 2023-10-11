@@ -2,3 +2,6 @@ node_modules
 keys
 .env
 res.json
+errorStack.txt
+data.txt
+errorLog.txt

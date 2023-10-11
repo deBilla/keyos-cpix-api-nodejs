@@ -49,6 +49,8 @@ try {
         }).catch((err) => {
             console.error(err);
             fs.writeFileSync("res.json", JSON.stringify(err));
+            fs.writeFileSync("data.txt", err.config.data);
+            fs.writeFileSync("errorStack.txt", err.stack);
         });
  
 } catch (error) {
